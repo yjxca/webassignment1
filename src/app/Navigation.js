@@ -1,13 +1,17 @@
 // src/app/Navigation.js
-    
+
+// The "use client" directive ensures this file is rendered on the client side.
+// In Next.js (App Router), server components are the default, so for interactive
+// components, we need "use client".
 'use client';
-    
-import Link from 'next/link'; // Make sure this import is correct
+
+import Link from 'next/link'; 
 
 export default function Navigation() {
   return (
     <nav>
       <ul>
+        {/* Each list item uses Next.js's built-in Link component for client-side routing */}
         <li>
           <Link href="/">Home</Link>
         </li>
